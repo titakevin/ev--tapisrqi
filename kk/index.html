@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_Shadow</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .togrul{
+            line-height: 50px;
+            width: 160px;
+            font-size:20px;
+            border-radius:10px;
+            margin:100px auto;
+            transition:.4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow:0 0 10px cyan,
+                       0 0 25px cyan;
+        }
+        .togrul:hover{
+
+            box-shadow: 0 0 5px cyan,
+                        0 0 25px cyan,
+                        0 0 50px cyan,
+                        0 0 100px cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="togrul">TOGRUL</div>
+</body>
+</html>

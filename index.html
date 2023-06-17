@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAMAL</title>
+<link rel="icon" href="ssss.jpg">
+    <style>
+        .animated-word {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 4px solid rgb(125, 10, 10);
+        }
+
+        .letter {
+            transition: 0.9s;
+            transform: translateX(0);
+            cursor: grab;
+            color: rgb(255, 255, 255);
+            font-size: 200px;
+            text-shadow: 10px 12px 14px;
+            font-family: camriba;
+            display: inline-block;
+            box-shadow: 0 0 5px rgb(255, 0, 0),
+                0 0 25px rgb(49, 2, 255),
+                0 0 50px rgb(4, 174, 46),
+                0 0 100px rgb(0, 0, 0);
+
+        }
+
+        .letter:hover {
+            transform: translateY(-3rem);
+            background: -webkit-linear-gradient(120deg, hsl(0, 89%, 48%), hsl(0, 89%, 48%));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .togrul {
+            line-height: 50px;
+            width: 160px;
+            font-size: 20px;
+            border-radius: 10px;
+            margin: 100px auto;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 10px cyan,
+                0 0 25px cyan;
+        }
+
+        .TOGRUL {
+            line-height: 50px;
+            width: 160px;
+            font-size: 20px;
+            border-radius: 10px;
+            margin: 100px auto;
+            transition: .4s;
+            text-align: center;
+            background-color: rgb(255, 23, 23);
+            box-shadow: 0 0 10px cyan,
+                0 0 25px cyan;
+        }
+
+        .TOHRUL:hover {
+
+            box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan;
+        }
+        .xeyal{
+            line-height: 50px;
+            width: 160px;
+            font-size: 20px;
+            border-radius: 10px;
+            margin: 100px auto;
+            transition: .4s;
+            text-align: center;
+            background-color: rgb(192, 240, 0);
+            box-shadow: 0 0 10px cyan,
+                0 0 25px cyan;    
+        }
+        
+        .xeyal:hover{
+            box-shadow: 0 0 5px rgb(255, 47, 0),
+                0 0 25px rgb(255, 72, 0),
+                0 0 50px rgb(157, 0, 255),
+                0 0 100px cyan; 
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            border-bottom: 3px solid;
+            text-align: center;
+        }
+
+        .bmw {
+            float: left;
+            margin: 1.25%;
+            width: 22.5%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .one {
+            background-image: url(9.jpg);
+            height: 200px;
+            filter: drop-shadow(10px);
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            text-align: center;
+            background-color: rgb(187, 255, 0);
+            box-shadow: 0 0 15px rgb(204, 255, 0);
+            display: inline-block;
+            box-shadow: 0 0 5px rgb(229, 249, 5),
+                0 0 25px rgb(189, 237, 15),
+                0 0 50px rgb(235, 243, 10),
+                0 0 100px rgb(239, 255, 13);
+
+        }
+
+        .two {
+            background-image: url(1.jpg);
+            height: 200px;
+            filter:sepia();
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            display: inline-block;
+            box-shadow: 0 0 5px rgb(6, 129, 205),
+                0 0 25px rgb(255, 0, 0),
+                0 0 50px rgb(209, 65, 21),
+                0 0 100px rgb(255, 55, 0);
+
+        }
+
+        .three {
+            background-image: url(2.jpg);
+            height: 200px;
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            display: inline-block;
+            box-shadow: 0 0 5px rgb(6, 129, 205),
+                0 0 25px rgb(0, 0, 0),
+                0 0 50px rgb(230, 238, 4),
+                0 0 100px rgb(255, 55, 0);
+
+        }
+
+        .four {
+            background-image: url(3.jpg);
+            height: 200px;
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            display: inline-block;
+            box-shadow: 0 0 5px rgb(6, 129, 205),
+                0 0 25px rgb(236, 0, 0),
+                0 0 50px rgb(13, 232, 68),
+                0 0 100px rgb(164, 75, 51);
+
+        }
+
+        .five {
+            background-image: url(4.jpeg);
+            height: 200px;
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            filter: brightness(10px);
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            box-shadow: 0 0 5px rgb(6, 129, 205),
+                0 0 25px rgb(0, 0, 0),
+                0 0 50px rgb(13, 232, 68),
+                0 0 100px rgb(255, 55, 0);
+        }
+
+        .six {
+            background-image: url(5.jpeg);
+            height: 200px;
+            filter: brightness(10px);
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            box-shadow: 0 0 5px rgb(241, 40, 0),
+                0 0 25px rgb(221, 6, 6),
+                0 0 50px rgb(13, 232, 68),
+                0 0 100px rgb(222, 48, 0);
+
+        }
+
+        .seven {
+            background-image: url(6.jpg);
+            height: 200px;
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            filter:sepia();
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            display: inline-block;
+            box-shadow: 0 0 15px red;
+            box-shadow: 0 0 5px rgb(241, 40, 0),
+                0 0 25px rgb(35, 221, 6),
+                0 0 50px rgb(13, 232, 68),
+                0 0 100px rgb(0, 222, 15);
+
+
+
+
+        }
+
+        .eight {
+            background-image: url(download.jpeg);
+            height: 200px;
+            width: 170px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            text-align: center;
+            background-color: rgb(254, 255, 255);
+            box-shadow: 0 0 15px rgb(227, 226, 226);
+            display: inline-block;
+            box-shadow: 0 0 5px rgb(239, 234, 232),
+                0 0 25px rgb(240, 244, 240),
+                0 0 50px rgb(13, 232, 68),
+                0 0 100px rgb(250, 255, 250);
+
+
+        }
+
+       
+        p {
+            font-family: 'Geologica', sans-serif;
+            font-family: 'Rajdhani', sans-serif;
+            font-family: 'Rubik Puddles', cursive;
+            font-family: 'Source Code Pro', monospace;
+            color: white;
+        }
+
+        .p {
+            float: right;
+            border-left: 4px solid;
+            font-family: 'Geologica', sans-serif;
+            font-family: 'Rajdhani', sans-serif;
+            font-family: 'Rubik Puddles', cursive;
+            font-family: 'Source Code Pro', monospace;
+            text-align: center
+        }
+
+
+
+        .bmw:hover {
+            scale: 0.8;
+            transition: 0.3;
+        }
+
+        .kamal {
+            border-radius: 25px;
+            margin: auto;
+            width: 100px;
+            height: 140px;
+            transition: .4s;
+            text-align: center;
+
+            display: inline-block;
+        }
+
+        .kamal:hover {
+            box-shadow: 0 0 5px rgb(214, 241, 7),
+                0 0 25px rgb(217, 255, 0),
+                0 0 50px rgb(255, 255, 0),
+                0 0 100px rgb(229, 255, 0);
+        }
+
+        .lq {
+            border-radius: 45px;
+            margin: auto;
+            width: 80px;
+            height: 40px;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            display: inline-block;
+        }
+
+        .lq:hover {
+            box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan;
+
+        }
+
+        .dost {
+            border-radius: 45px;
+            margin: auto;
+            width: 80px;
+            height: 40px;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            display: inline-block;
+        }
+
+        .dost:hover {
+            box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan;
+        }
+
+        .master {
+            height: 40px;
+            width: 80px;
+            border-radius: 45px;
+            margin: auto;
+            transition: .4s;
+            text-align: center;
+            background-color: cyan;
+            box-shadow: 0 0 15px red;
+            display: inline-block;
+        }
+
+        .master:hover {
+            box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-word">
+        <div class="letter">K</div>
+        <div class="letter">A</div>
+        <div class="letter">M</div>
+        <div class="letter">A</div>
+        <div class="letter">L</div>
+    </div>
+    <div class="TOGRUL"><a href="youtube.com/watch?v=9paCEMyfiiY">Youtube</a></div>
+    <div class="xeyal"><a href="https://az.wikipedia.org/wiki/%C4%B0lham_%C6%8Fliyev">google</a></div>
+    <div class="bmw one"></div>
+    <div class="bmw two"></div>
+    <div class="bmw three"></div>
+    <div class="bmw four"></div>
+    <div class="bmw  five"></div>
+    <div class="bmw six"></div>
+    <div class="bmw seven"></div>
+    <div class="bmw eight"></div>
+    <div class="bmw kamal"></div>
+
+
+</body>
+
+</html>
